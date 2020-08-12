@@ -1,0 +1,7 @@
+Scene2 {
+     
+     id: obj_0
+     property var setup_co: 555
+
+
+}

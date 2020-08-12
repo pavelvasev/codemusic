@@ -1,0 +1,22 @@
+####### squares.txt.erb
+ok you requested computing for value: <%= ctx.input.inspect %>
+input's class is: <%= ctx.input.class %>
+test is <%= ctx.input[0].inspect %>
+<% q = ctx.input[0].to_i %>
+
+squares are:
+<%for i in 1..q do %>
+ <%= i %>: <%= i*i %>
+<%end%> 
+
+#### main
+<squares>
+  <other/>
+</squares>
+
+
+#### some.rb
+ctx.r = [10,20]
+
+#### other.rb
+ctx.r = 5

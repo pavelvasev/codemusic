@@ -1,0 +1,33 @@
+####### squares.txt.erb
+ok you requested computing for value: <%= ctx.input.inspect %>
+input's class is: <%= ctx.input.class %>
+
+####### squares.json.erb+
+<% q = ctx.input[0].to_i %>
+{ 
+  "inputs": <%= (1..q).map(&:to_i).inspect %>,
+  "result" : [
+<%for i in 1..q do %>
+  <%= i*i %> <%= "," if i < q %>
+<%end%> 
+]}
+
+#### group
+<tdata/>
+
+#### main
+<group>
+  <squares>
+    <other/>
+    <one/>
+  </squares>
+  <squares>
+    <one/>
+  </squares>
+</group>
+
+#### other
+15
+
+#### one
+5

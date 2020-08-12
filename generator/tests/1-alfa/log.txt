@@ -1,0 +1,25 @@
+add_cond: [nil, :items] (code=:tree_items_to_input)
+ add_cond: used ctx index: -1
+ add_cond: obj of that index is: 
+add_cond: [nil, :items] (code=:tree_items_to_input)
+ add_cond: used ctx index: -1
+ add_cond: obj of that index is: 
+----- mainmusic inited. ready to work.
+include: {.,/home/contact/prg/codemusic/input/codemusic/parts/generator}/elements/**/*.cm found files: []
+include: {.,/home/contact/prg/codemusic/input/codemusic/parts/generator}/elements/**/*.cm2 found files: []
+default process_parsed_record: name_part="main.txt!", cond_attrs=[], params={}, codeid=code_1_for_main.txt!(stdin)
+fixed name_part=main.txt, assign_mode=true, rmethod=
+----- mainmusic: computing e-pass.
+compute(mainmusic::go): :main (data=[])
+ compute_in_context: :main
+  chain: [] OWNCODE []
+  owncode (main)
+   compute(txt-lambda): {:tag=>:pass_value, :root=>true, :name=>"main", :value=>"hello world!!!123"} (data=[])
+    compute_in_context: {:tag=>:pass_value, :root=>true, :name=>"main", :value=>"hello world!!!123"}
+     chain: [] OWNCODE []
+     owncode (pass_value)
+----- mainmusic: computing p2-pass.
+compute(mainmusig::go): "hello world!!!123" (data=[])
+ compute_in_context: "hello world!!!123"
+  request is not a hash - returning it as is
+----- mainmusic: finished.

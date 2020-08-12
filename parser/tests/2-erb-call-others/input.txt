@@ -1,0 +1,17 @@
+####### test.txt.erb
+this is test
+<%= alfa %>
+
+test going on
+<%= BETA %>
+
+test finished
+
+#### main
+<test/>
+
+#### alfa.txt
+alfa
+
+#### BETA.txt.erb
+<%= 55*77 %>

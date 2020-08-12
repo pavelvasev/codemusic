@@ -1,0 +1,23 @@
+add_cond: [nil, :items] (code=:tree_items_to_input)
+ add_cond: used ctx index: -1
+ add_cond: obj of that index is: 
+add_cond: [nil, :items] (code=:tree_items_to_input)
+ add_cond: used ctx index: -1
+ add_cond: obj of that index is: 
+----- mainmusic inited. ready to work.
+include: {.,/home/contact/prg/codemusic/input/codemusic/parts/generator}/elements/**/*.cm found files: []
+include: {.,/home/contact/prg/codemusic/input/codemusic/parts/generator}/elements/**/*.cm2 found files: []
+default process_parsed_record: name_part="setup", cond_attrs=[], params={}, codeid=code_1_for_setup(stdin)
+fixed name_part=setup, assign_mode=, rmethod=
+add_cond: [:setup] (code=:"code_1_for_setup(stdin)")
+ add_cond: used ctx index: 0
+ add_cond: obj of that index is: 
+----- mainmusic: computing e-pass.
+compute(mainmusic::go): :main (data=[])
+ compute_in_context: :main
+  chain: [] ~ []
+ compute_in_context: {:tag=>:default_method}
+  chain: [] ~ []
+----- mainmusic: computing p2-pass.
+compute(mainmusig::go): [] (data=[])
+----- mainmusic: finished.

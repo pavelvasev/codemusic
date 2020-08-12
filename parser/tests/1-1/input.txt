@@ -1,0 +1,16 @@
+
+####### a [markerattr1] name="test1" prepend=true kukaracha
+123
+
+########
+444
+
+###### include c.txt
+
+###### b //teta
+555
+http://lact.ru
+OQ
+
+#### main
+<b/>

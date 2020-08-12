@@ -1,0 +1,19 @@
+####### a [markerattr1] name="test1" prepend=true
+123
+
+##### include alfa.txt
+
+##### b
+333
+
+##### include p-*.txt
+
+#### main @mymain
+<group>
+  <p3/>
+  <b/>
+  <p3/>
+</group>  
+
+### group
+<tdata/>

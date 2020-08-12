@@ -1,0 +1,14 @@
+####### a
+string-a
+
+######## b.rb
+ctx.machine.log "b is evalling, alfa is #{@alfa}, self is #{self}"
+ctx.r = @alfa
+
+#### main
+<b num="3">
+  <a/>
+</b>
+
+#### main.rb prepend=true
+@alfa = "lalala"

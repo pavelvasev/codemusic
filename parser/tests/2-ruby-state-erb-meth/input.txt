@@ -1,0 +1,19 @@
+####### a
+string-a
+
+######## b.erb
+<% ctx.machine.log "b.erb is evalling, alfa is #{ctx.machine.state[:alfa]}, self is #{self}" %>
+<%= ctx.machine.state[:mma].call( ctx.machine.state[:alfa] ) %>
+
+#### main
+<b num="3">
+  <a/>
+</b>
+
+#### main.rb prepend=true
+ctx.machine.state[:alfa] = "lalala"
+# ну козырнее @alfa конечно, но @alfa идет в контексте parser-а, а erb выполняется в контексте ERBContext
+# хотя конечно наверное, можно перевести будет и на контекст parse-а
+ctx.machine.state[:mma] = lambda { |qqq|
+  qqq + "~" + qqq
+}
