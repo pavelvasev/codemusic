@@ -15,6 +15,13 @@ module DasParseInclude
       # хотя тоже хз.. получается они будут относительно некоей текущей директории.. (по отношению к программе, не к файлу..)
       path = file
       
+      # патч наглый - чтобы уметь относительные пути загружать
+      if path !~ /{/
+        current_dir = File.dirname( current_file_name )
+        path = File.join( current_dir, path )
+        STDERR.puts "include used current_file_name=#{current_file_name}, thus current_dir=#{current_dir} and path=#{path}"
+      end
+      
       foundfiles = Dir.glob( path ).sort
       @machine.log "include: #{path} found files: #{foundfiles}"
       for foundfile in foundfiles do
